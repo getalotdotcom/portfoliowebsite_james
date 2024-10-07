@@ -1,657 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- logo images icon -->
+    <link rel="icon" type="image/jpg" href="./imgs/favicon.jpg" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My portfolio website to showcase the work I have done so far.">
-    <meta name="keywords" content="HTML, CSS, JavaScript, portfolio Website,">
-    <meta name="author" content="Pandey Pradhyuman">
-    <title>Home Page</title>
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest"> -->
-
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="index.js"></script>
-</head>
-
-<body>
-    <header class="header">
-        <a href="./index.html">
-            <img src="images/logo.png" alt="our main logo" class="logo">
+    <title>James</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo-holder"
+        ><div class="logo">L</div>
+        <div class="logo-text">Portfolio website</div></a
+      >
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">projects</a>
+          </li>
+          <li>
+            <a href="https://wa.link/d4vg3s" class="button"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
+        <a href="#" class="mobile-toggle" onClick="toggleMobileMenu()">
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h14"
+            />
+          </svg>
         </a>
-        <nav class="navbar">
-            <ul class="navbar-lists">
-                <li><a href="#" class="navbar-link home-link">Home</a></li>
-                <li><a href="./about.html" class="navbar-link about-link">About</a></li>
-                <li><a href="./service.html" class="navbar-link service-link">Services</a></li>
-                <li><a href="#" class="navbar-link portfolio-link">Portfolio</a></li>
-                <li><a href="./contact.html" class="navbar-link contact-link">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="mobile-navbar-btn">
-            <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
-            <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
-        </div>
+      </nav>
     </header>
-
-    <!-- ======================================== 
-          Our Main Hero Section Start  
-    ========================================  -->
-
     <main>
-        <section class="section-hero section">
-            <div class="container grid grid-two-column">
-                <div class="section-hero-data">
-                    <p class="hero-top-data">this is me</p>
-                    <h1 class="hero-heading">pandey pradhyuman</h1>
-                    <p class="hero-para">I'm pandey pradhuman. A Full stack Developer and freelancer. A Full stack
-                        Developer and freelancer.</p>
-                    <div>
-                        <a href="#" class="btn hireme-btn">Hire me</a>
-                    </div>
-                </div>
-                <!-- hero section right side -->
-
-                <div class="section-hero-image">
-                    <picture>
-                        <source srcset="images/hero.webp" type="image/webp">
-                        <source srcset="images/hero-min.jpg" type="image/jpg">
-                        <img src="images/hero-min.jpg" alt="this is me pandey pradhyuman" class="hero-img">
-                        <!-- <img src="images/hero.jpg" alt="this is me pandey pradhyuman" class="hero-img"> -->
-                    </picture>
-                </div>
+      <section class="hero container">
+        <div class="hero-blue">
+          <div>
+            <h1>
+              <small>Hi I'm</small>
+              James Mothabela
+            </h1>
+            <p>
+              Design and Developer in India who creates educational content on
+              Youtube to teach others about HTML, CSS and Javascript.
+              <span
+                >I'm intreseted in AI topics which is why I also add things ike
+                ChatGPT into my projects these days.</span
+              >
+            </p>
+            <div class="call-to-action">
+              <a href="./newresume.pdf" class="button black">View Resume</a>
+              <a href="https://wa.link/d4vg3s" class="button white"
+                >Contact Me</a
+              >
             </div>
-        </section>
+            <div class="social-links">
+              <a href="#"
+                ><img src="./imgs/github.png" alt="GitHub" width="48"
+              /></a>
+              <a href="#"
+                ><img src="./imgs/linkedin.png" alt="Linkedin" width="48"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-yellow">
+          <img src="./imgs/smiling-young-black-man-glasses-gray-business-suit-emotional-business-portrait-smiling-young-black-man-glasses-130576475.webp" alt="james" width="53%" />
+        </div>
+      </section>
+      <section class="logos container">
+        <div class="marquee">
+          <div class="track">
+            <img src="./imgs/html.png" alt="HTML" width="128" />
+            <img src="./imgs/css.png" alt="CSS" width="128" />
+            <img src="./imgs/javascript.png" alt="Javascript" width="128" />
+            <img src="./imgs/sass.png" alt="SASS" width="128" />
+            <img src="./imgs/react.png" alt="React" width="128" />
+            <img src="./imgs/nextjs.png" alt="Next JS" width="128" />
+            <img src="./imgs/azure.png" alt="Asure" width="128" />
+            <img src="./imgs/vscode.png" alt="VScode" width="128" />
+            <img src="./imgs/python.png" alt="Python" width="128" />
+            <img src="./imgs/html.png" alt="HTML" width="128" />
+            <img src="./imgs/css.png" alt="CSS" width="128" />
+            <img src="./imgs/javascript.png" alt="Javascript" width="128" />
+            <img src="./imgs/sass.png" alt="SASS" width="128" />
+            <img src="./imgs/react.png" alt="React" width="128" />
+            <img src="./imgs/nextjs.png" alt="Next JS" width="128" />
+            <img src="./imgs/azure.png" alt="Asure" width="128" />
+            <img src="./imgs/vscode.png" alt="VScode" width="128" />
+            <img src="./imgs/python.png" alt="Python" width="128" />
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills container">
+        <h2><small>About Me</small>skills</h2>
+        <div class="holder-blue">
+          <div class="left-column">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Angular</li>
+              <li>React</li>
+              <li>Vue</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>Ruby</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <h3>A Bit about me</h3>
+            <p>
+              Hi I'm James, a Design and Developer in India who creates
+              educational content on Youtube to teach others about HTML, CSS and
+              Javascript. I'm intreseted in AI topics which is why I also add
+              things ike ChatGPT into my projects these days!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+              voluptatem exercitationem ut facere autem illo obcaecati
+              dignissimos eos repellat sapiente provident doloribus odio dolorum
+              neque minus, quasi debitis modi ullam. Quos, sunt architecto.
+              Corporis, cum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="work-experience container">
+        <h2><small>Recent </small> Work Experience</h2>
+        <div class="jobs">
+          <article>
+            <figure>
+              <div>
+                <img
+                  src="./imgs/youtube.jpg"
+                  alt="workplace 1 - YouTube Creater"
+                  width="100%"
+                />
+                <figcaption>workplace - YouTube Creator</figcaption>
+              </div>
+            </figure>
+            <h3>YouTube Creater</h3>
+            <div>2021-2022</div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+              magnam quo eos quasi velit nostrum?
+            </p>
+          </article>
+          <article>
+            <figure>
+              <div>
+                <img
+                  src="./imgs/web-developers.avif"
+                  alt="workplace 2 - Developer"
+                  width="100%"
+                />
+                <figcaption>workplace - Developer</figcaption>
+              </div>
+            </figure>
+            <h3>Developer</h3>
+            <div>2022-2023</div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse et,
+              maxime quae natus vel pariatur.
+            </p>
+          </article>
+          <article>
+            <figure>
+              <div>
+                <img
+                  src="./imgs/technical-support-engineer-3.webp"
+                  alt="workplace - 3"
+                  width="100%"
+                />
+                <figcaption>Technical Engineer</figcaption>
+              </div>
+            </figure>
+            <h3>Technical Engineer</h3>
+            <div>2023-2024</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              quasi quisquam atque placeat natus deserunt?
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="bento container">
+        <h2>
+          <small>Previous</small>
+          Completed Projects
+        </h2>
+        <div class="bento-grid">
+          <a href="#" class="bento-item">
+            <img src="./imgs/mywork1.jpg" alt="BGCCI" width="100%" />
+          </a>
+          <a href="#" ="bento-item">
+            <img src="./imgs/mywork2.png" alt="Churhview" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+            <img src="./imgs/mywork3.jpg" alt="Harley" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+            <img src="./imgs/mywork4.jpeg" alt="Bunbury" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+            <img src="./imgs/mywork5.png" alt="Running" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+            <img src="./imgs/mywork6.jpg" alt="School" width="100%" />
+          </a>
+        </div>
+      </section>
+      <section class="chatbot container">
+        <h2>
+          <small> Talk to me </small>
+          Chatbot
+        </h2>
+        <div class="chatbot-blue">
+          <div class="chat-info">
+            <h3>Azure AI Chatbot</h3>
+            <p>
+              I've put together a chatbot here which knowns all my skills, work
+              experience and has a copy of my CV/Resume. You can use it to ask
+              questions about me to get a better idea of who I am get a better
+              idea of who I am and what I've done
+            </p>
+            <p>
+              You can also download my resume here if you want to take a look at
+              it. I'm currently looking for new oppurtinities so if you have a
+              project you think I'd be good fit for, please get in touch!
+            </p>
+            <a href="./newresume.pdf" class="button black">Download Resume</a>
+          </div>
+          <div class="chat-box">
+            <div class="scroll-area">
+              <ul id="chat-log">
+                <li>
+                  <span class="avatar bot">AI</span>
+                  <div class="message">
+                    Hi, I'm a friendly chatbot that lets you interactive with
+                    this portfolio and CV. How can I help?
+                  </div>
+                </li>
+                <li>
+                  <span class="avatar user">User</span>
+                  <div class="message">
+                    I have a question to ask you about this resume
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="chat-message">
+              <input
+                type="text"
+                placeholder="Hey james, what skills are you best at?"
+              />
+              <button class="button black">Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
-
-    <!-- ======================================== 
-          Our Bio-data Section Start  
-    ========================================  -->
-
-    <section class="section-biodata section">
-        <div class="container grid grid-two-column">
-            <div class="bio-image">
-                <!-- <img src="images/biodata.jpg" alt="my bio data image"> -->
-                <!-- with the lazy loading -->
-                <!-- <img src="images/lazy1.jpg" alt="my bio data image" data-src="images/biodata.jpg" class="lazy-img"> -->
-                <img src="images/biodata.jpg" alt="my bio data image" data-src="images/biodata.jpg" class="lazy-img">
-            </div>
-            <!-- bio right side data -->
-            <div class="bio-data">
-                <h2 class="common-heading">my bio-data</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore qui assumenda corporis corrupti
-                    saepe, voluptatibus illum quidem esse quas sint eaque veniam dignissimos ratione illo quis facilis.
-                </p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo nulla dicta et.</p>
-                <div class="bio-data-stats">
-                    <div class="bio-stats">
-                        <h3>Design</h3>
-                        <div class="bio-progress-bar">
-                            <span>80%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>HTML</h3>
-                        <div class="bio-progress-bar bio-progress-2">
-                            <span>99%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>CSS</h3>
-                        <div class="bio-progress-bar bio-progress-3">
-                            <span>80%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>Boostrap</h3>
-                        <div class="bio-progress-bar bio-progress-4">
-                            <span>75%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>JavaScript</h3>
-                        <div class="bio-progress-bar bio-progress-5">
-                            <span>70%</span>
-                        </div>
-                    </div>
-                    <!-- <div class="bio-stats">
-                        <h3>MERN</h3>
-                        <div class="bio-progress-bar bio-progress-6">
-                            <span>70%</span>
-                        </div>
-                    </div> -->
-                </div>
-                <div class="bio-data-btn">
-                    <a href="https://drive.google.com/file/d/16n-uOgs9U5LiD1Huy7S5qQ0s5J2114gS/view?usp=sharing"
-                        download target="_blank" class="btn">Download CV</a>
-                </div>
-            </div>
-        </div>
+    <section class="form container">
+      <div class="map-container" id="map"></div>
+      <div class="contact-form">
+        <form id="contactForm">
+          <h2>Connect Me!</h2>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </section>
 
-    <!-- ======================================== 
-          Our portfolio Section Start  
-    ========================================  -->
-
-    <section class="section section-portfolio" id="portfolio-section">
-        <div class="container">
-            <h2 class="common-heading">Latest Works</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ex
-                eos commodi provident tempore possimus, mollitia vero quas.
-            </p>
+    <!-- footer -->
+    <section class="footer container">
+      <footer>
+        <div class="footer-container">
+          <p>&copy; 2024 Your James. All rights reserved.</p>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                alt="Facebook"
+              />
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                alt="Twitter"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
+                alt="Instagram"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733561.png"
+                alt="LinkedIn"
+              />
+            </a>
+          </div>
         </div>
-
-        <div class="p-btns">
-            <div class="btn p-btn" data-btn-num="1">Website</div>
-            <div class="btn p-btn" data-btn-num="2">Youtube</div>
-            <div class="btn p-btn" data-btn-num="3">Design</div>
-        </div>
-
-        <div class="container grid grid-three-column portfolio-images">
-            <div class="img-overlay p-btn--1">
-                <img src="images/folio/1.jpg" alt="my works" />
-                <div class="overlay">
-                    <a href="http://charcounter.thapaonlineclass.com/" target="_thapa" class="common-heading">Project
-                        1</a>
-                </div>
-            </div>
-
-            <div class="img-overlay p-btn--3">
-                <img src="images/folio/4.jpg" alt="my works" />
-                <div class="overlay">
-                    <a href="http://charcounter.thapaonlineclass.com/" target="_thapa" class="common-heading">Project 2
-                    </a>
-                </div>
-            </div>
-
-            <div class="img-overlay p-btn--1">
-                <img src="images/folio/3.jpg" alt="portfolio images " />
-                <div class="overlay">
-                    <a href="#" target="_blank" class="common-heading">Project 3</a>
-                </div>
-            </div>
-            <div class="img-overlay p-btn--1 p-btn--2">
-                <img src="images/folio/4.jpg" alt="portfolio images " />
-                <div class="overlay">
-                    <a href="#" target="_blank" class="common-heading">Project 4</a>
-                </div>
-            </div>
-            <div class="img-overlay p-btn--2">
-                <img src="images/folio/5.jpg" alt="portfolio images " />
-                <div class="overlay">
-                    <a href="#" target="_blank" class="common-heading">Project 5</a>
-                </div>
-            </div>
-            <div class="img-overlay p-btn--1">
-                <img src="images/folio/1.jpg" alt="portfolio images " />
-                <div class="overlay">
-                    <a href="#" target="_blank" class="common-heading">Project 6</a>
-                </div>
-            </div>
-        </div>
+      </footer>
     </section>
-
-
-    <!-- ======================================== 
-          Our work counter Section Start  
-    ========================================  -->
-
-    <section class="section section-work-data">
-        <div class="container grid grid-four-column">
-            <div>
-                <h2 class="counter-numbers" data-number="2000">0+</h2>
-                <p>project completed</p>
-            </div>
-            <div>
-                <h2 class="counter-numbers" data-number="6000">0+</h2>
-                <p>Happy Clients</p>
-            </div>
-            <div>
-                <h2 class="counter-numbers" data-number="5000">0+</h2>
-                <p>cups of tea</p>
-            </div>
-            <div>
-                <h2 class="counter-numbers" data-number="3000">0+</h2>
-                <p>real professionals</p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ======================================== 
-          Our Services  Section Start  
-    ========================================  -->
-
-
-    <section class="section section-services">
-        <div class="container">
-            <h2 class="common-heading">Service Offers</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ex
-                dolores tempore possimus, mollitia vero quas
-            </p>
-        </div>
-
-        <!-- services offers card -->
-
-        <div class="container grid grid-three-column">
-            <div class="service-box">
-                <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
-                <h3>Web Design</h3>
-                <p>
-                    “It is not because things are difficult that we do not dare; it is
-                    because we do not dare that they are difficult.”
-                </p>
-            </div>
-
-            <div class="service-box">
-                <ion-icon name="logo-react" class="service-icon"></ion-icon>
-                <h3>web development</h3>
-                <p>
-                    “It is not because things are difficult that we do not dare; it is
-                    because we do not dare that they are difficult.”
-                </p>
-            </div>
-
-            <div class="service-box">
-                <ion-icon name="camera-outline" class="service-icon"></ion-icon>
-                <h3>photography</h3>
-                <p>
-                    “It is not because things are difficult that we do not dare; it is
-                    because we do not dare that they are difficult.”
-                </p>
-            </div>
-
-            <div class="service-box">
-                <ion-icon name="phone-portrait-sharp" class="service-icon"></ion-icon>
-                <h3>Mobile Apps</h3>
-                <p>
-                    “It is not because things are difficult that we do not dare; it is
-                    because we do not dare that they are difficult.”
-                </p>
-            </div>
-
-            <div class="service-box">
-                <ion-icon name="globe-sharp" class="service-icon"></ion-icon>
-                <h3>apps interface</h3>
-                <p>
-                    “It is not because things are difficult that we do not dare; it is
-                    because we do not dare that they are difficult.”
-                </p>
-            </div>
-
-            <div class="service-box">
-                <ion-icon name="images-sharp" class="service-icon"></ion-icon>
-                <h3>graphic design</h3>
-                <p>
-                    “It is not because things are difficult that we do not dare; it is
-                    because we do not dare that they are difficult.”
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======================================== 
-          Our Testimonial  Section Start  
-    ========================================  -->
-
-    <section class="section section-testimonial">
-        <div class="container">
-            <h2 class="common-heading">Happy Clients Works</h2>
-        </div>
-        <div class="swiper mySwiper container">
-            <div class="swiper-wrapper">
-                <!-- Section start -->
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, dolore temporibus? Asperiores
-                            fugit culpa beatae dicta unde reprehenderit,</p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-column">
-                        <figure>
-                            <img src="images/clients/a.jpg" alt="client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>rajan pandey</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Section end -->
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, dolore temporibus? Asperiores
-                            fugit culpa beatae dicta unde reprehenderit,</p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-column">
-                        <figure>
-                            <img src="images/clients/b.jpg" alt="client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>rajan pandey</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Section end -->
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, dolore temporibus? Asperiores
-                            fugit culpa beatae dicta unde reprehenderit,</p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-column">
-                        <figure>
-                            <img src="images/clients/c.jpg" alt="client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>rajan pandey</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Section end -->
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, dolore temporibus? Asperiores
-                            fugit culpa beatae dicta unde reprehenderit,</p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-column">
-                        <figure>
-                            <img src="images/clients/d.jpg" alt="client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>rajan pandey</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Section end -->
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, dolore temporibus? Asperiores
-                            fugit culpa beatae dicta unde reprehenderit,</p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-column">
-                        <figure>
-                            <img src="images/clients/e.jpg" alt="client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>rajan pandey</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Section end -->
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, dolore temporibus? Asperiores
-                            fugit culpa beatae dicta unde reprehenderit,</p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-column">
-                        <figure>
-                            <img src="images/clients/f.jpg" alt="client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>rajan pandey</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Section end -->
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, dolore temporibus? Asperiores
-                            fugit culpa beatae dicta unde reprehenderit,</p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-column">
-                        <figure>
-                            <img src="images/clients/g.jpg" alt="client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>rajan pandey</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Section end -->
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, dolore temporibus? Asperiores
-                            fugit culpa beatae dicta unde reprehenderit,</p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-column">
-                        <figure>
-                            <img src="images/clients/h.jpg" alt="client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>rajan pandey</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <!-- ======================================== 
-          Our Freelancing Section Start  
-    ========================================  -->
-
-    <section class="section section-freelancing">
-        <div class="overlay"></div>
-        <div class="container">
-            <h2>I am <span>available</span> for freelancing</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum beatae fugiat fuga veniam.</p>
-            <a href="/contact.html" class="btn">HIRE ME</a>
-        </div>
-    </section>
-
-    <!-- ======================================== 
-          Our Contact Section Start  
-    ========================================  -->
-
-    <section class="section section-contact">
-        <div class="container">
-            <h2 class="common-heading">Contact Us</h2>
-        </div>
-
-        <div class="section-contact-main contact-container">
-            <form action="https://formspree.io/f/mjvlzbpe" method="POST">
-                <div class="grid grid-two-column">
-                    <div>
-                        <label for="username"></label>
-                        <input type="text" name="Name" id="username" placeholder="Yourname" autocomplete="off" required>
-                    </div>
-                    <div>
-                        <label for="email"></label>
-                        <input type="email" name="email" id="email" placeholder="demo@gmail.com" autocomplete="off"
-                            required>
-                    </div>
-                </div>
-
-                <div>
-                    <label for="subject"></label>
-                    <input type="text" name="subject" id="subject" placeholder="Subject" autocomplete="off" required>
-                </div>
-                <div>
-                    <label for="textarea"></label>
-                    <textarea name="Message" id="textarea" cols="30" rows="10" placeholder="Write your message"
-                        autocomplete="off" minlength="5" required></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" id="submit" class="btn" value="send message">
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- ======================================== 
-          Our footer Section Start  
-    ========================================  -->
-
-    <footer class="section section-footer">
-        <!-- <div class="container grid grid-four-column"> removed services -->
-        <div class="container grid grid-three-column">
-            <div class="f-about">
-                <h3>About</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dicta, maxime voluptatem
-                    nesciunt officiis quae fuga perspiciatis velit non ea!</p>
-            </div>
-            <!-- end -->
-            <div class="f-links">
-                <h3>Links</h3>
-                <ul>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span>
-                        <a href="#">home</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span>
-                        <a href="#">about</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span>
-                        <a href="#">services</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span>
-                        <a href="#">portfolio</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span>
-                        <a href="#">contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- end -->
-            <div class="f-services">
-                <h3>Services</h3>
-                <ul>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span>
-                        <a href="#">web design</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span>
-                        <a href="#">web development</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span>
-                        <a href="#">web design</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span>
-                        <a href="#">web development</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span>
-                        <a href="#">web design</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- end -->
-
-            <div class="f-address">
-                <h3>Have a Questions?</h3>
-                <address>
-                    <div>
-                        <p>
-                            <span>
-                                <ion-icon name="location-outline"></ion-icon>
-                            </span> Ahmedabad, India
-                        </p>
-                    </div>
-
-                    <div>
-                        <p>
-                            <span>
-                                <ion-icon name="call-outline"></ion-icon>
-                            </span>
-                            <a href="tel:+919033300815"> +91 903300815</a>
-                        </p>
-                    </div>
-
-                    <div>
-                        <p>
-                            <span>
-                                <ion-icon name="mail-outline"></ion-icon>
-                            </span>
-                            <a href="mailto:ppraduman6@gmail.com"> ppraduman6@gmail.com </a>
-                        </p>
-                    </div>
-                </address>
-            </div>
-            <!-- end -->
-        </div>
-
-        <div class="container">
-            <div class="f-social-icons">
-                <a href="https://www.instagram.com/yourname" target="_blank">
-                    <ion-icon class="icons" name="logo-instagram"></ion-icon>
-                </a>
-
-                <a href="https://www.github.com/Praduman543" target="_blank">
-                    <ion-icon class="icons" name="logo-github"></ion-icon>
-                </a>
-
-                <a href="https://www.facebook.com/yourname" target="_blank">
-                    <ion-icon class="icons" name="logo-facebook"></ion-icon>
-                </a>
-            </div>
-
-            <!-- <div class="f-credits">
-                <p>
-                    Copyrigh &copy;2022 All rights reserved | This template is made with 🤍 by Thapa Technical
-                </p>
-            </div> -->
-        </div>
-    </footer>
-
-
-    <!-- ======================================== 
-          Our javacript Section Start  
-    ========================================  -->
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-</body>
-
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
